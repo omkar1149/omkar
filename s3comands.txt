@@ -1,0 +1,35 @@
+
+     [S3 commands in cmdprompt]
+
+
+
+
+Go to cmd
+aws configure   >>    [go to iam user>> create access key>> copy accesskey & secret acceskey]
+
+aws s3 ls   [To list buckets]
+
+aws s3 mb s3://buckatname  [create the s3 bucket]
+
+aws s3 rb s3://bucketname  [remove the s3 bucket]
+
+aws s3 rm s3://hdfc72 --recursive  [remove objects into the bucket]
+    
+             [filepath\filenamewithfileproperties]          [bucketname]                       [transferaccelerationUrl]
+aws s3 cp C:\Users\Lnenovo\Pictures\Screenshots\share.png s3://bucketname --endpoint-url https://hdfc72.s3-accelerate.amazonaws.com 
+
+aws s3 ls s3://bucketname  [to dispaly the objects in  bucket]
+
+   [filepath/filenamewithfileproperties]
+aws s3 cp D:\rushiclasses\aws2.mp4 s3://bucketname [To upload singlefile into the bucket]
+
+
+aws s3 sync C:\Users\Lnenovo\Pictures\Screenshots s3://hdfc72  [To upload multiple files into the bucket]
+
+aws s3 sync s3://icici2342 s3://sbi867  [Copy files from one bucket to another bucket]
+
+cls  [clear ]
+
+doskey /history  [commands history]
+
+

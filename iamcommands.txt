@@ -1,0 +1,32 @@
+
+    [AWS IAM COMMANDS IN CMDPROMPT]
+
+
+aws iam create-user --user-name devops      [To create  iamuser]  
+ 
+aws iam create-group --group-name sam       [To create iamgroup]
+
+aws iam delete-user --user-name devops      [To delete iamuser]
+
+aws iam delete-group --group-name sam       [To delete iamgroup]
+
+aws iam list-groups   [To list the  iamgroups]
+
+aws iam list-users    [To list the iamusers]
+
+aws iam add-user-to-group --user-name devops --group-name sam       [Add user-to-group]
+
+aws iam remove-user-from-group --user-name devops --group-name sam  [Remove user-from-group]
+
+aws iam attach-user-policy --policy-arn arn:aws:iam:ACCOUNT-ID:aws:policy/AdministratorAccess --user-name devops  [Attach userpolicy]
+
+aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/ReadOnlyAccess --group-name sam                [Attach grouppolicy]
+
+aws iam detach-user-policy --user-name devops --policy-arn arn:aws:iam::123456789012:policy/TesterPolicy          [Detach userpolicy]
+
+aws iam detach-group-policy --group-name sam --policy-arn arn:aws:iam::123456789012:policy/TesterAccessPolicy     [Detach grouppolicy]
+
+
+
+
+
